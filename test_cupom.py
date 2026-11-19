@@ -23,3 +23,11 @@ def test_percentual_zero_e_rejeitado():
     resultado = desconto_valido(percentual)
 
     assert resultado is False
+
+
+def test_percentual_decimal_e_rejeitado():
+    percentual = 21.5
+
+    resultado = desconto_valido(percentual)
+
+    assert resultado is False
